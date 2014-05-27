@@ -54,6 +54,7 @@
 	            android:textAppearance="?android:attr/textAppearanceLarge" />
 		</LinearLayout>
 		
+		
 		<LinearLayout
 	        android:id="@+id/relacionado"
 	        android:layout_width="300dp"
@@ -96,18 +97,6 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/investigacion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/titulo"
-        android:layout_alignRight="@+id/titulo"
-        android:layout_below="@+id/titulo"
-        android:layout_margin="10dp"
-        android:layout_alignBottom="@+id/titulo"
-        android:text="Investigación: Árboles Citadinos"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
         android:id="@+id/titulo"
         android:layout_width="700dp"
         android:layout_height="50dp"
@@ -119,14 +108,35 @@
         android:text="Título: Árbol de las afueras de Pittsburg\n	-Autor: Lagertha Lockbrock"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titulo"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/agregar_portapapeles" />
+
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/investigacion"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="167dp"
+        android:layout_marginLeft="75dp"
+        android:layout_toRightOf="@+id/imageButton1"
         android:src="@drawable/tree_article_image900x340" />
+
+    <TextView
+        android:id="@+id/investigacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titulo"
+        android:layout_below="@+id/titulo"
+        android:padding="10dp"
+        android:text="Investigación: Árboles Citadinos"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
     
 </RelativeLayout>
 
