@@ -1,0 +1,442 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="memex.interfaz.PerfilActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/libro_secretgarden"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/foto_perfil" />
+        <Button
+	        android:id="@+id/info"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Información" />
+
+        <TextView
+            android:id="@+id/textAmigos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Amigos"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/background_rectangle_blue"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ListView
+            android:id="@+id/listAmigos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_rectangle_borderlines" >
+        </ListView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/favoritos"
+        android:layout_width="75dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:text="Favos" />
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollViewfav"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/favoritos"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/background_rectangle_borderlines"
+        android:layout_toRightOf="@+id/favoritos"
+        android:visibility="gone" >
+        <RelativeLayout 
+		    android:id="@+id/favo"
+		    android:layout_margin="5dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="300dp">
+
+	    <ImageView
+	        android:id="@+id/libro_secretgarden"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/book_secret_garden320x480" />
+	    <ImageView
+	        android:id="@+id/tree"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/libro_secretgarden"
+	        android:src="@drawable/tree_article_image500x189" />
+	    <ImageView
+	        android:id="@+id/zelda"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/tree"
+	        android:layout_toRightOf="@+id/libro_secretgarden"
+	        android:src="@drawable/articulo_pequeno_interfaces" />
+	    </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/misinvestigaciones"
+        android:layout_width="75dp"
+        android:layout_height="300dp"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/favoritos"
+        android:text="Invest" />
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollViewInvest"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/misinvestigaciones"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/background_rectangle_borderlines"
+        android:layout_toRightOf="@+id/misinvestigaciones"
+        android:visibility="gone" >
+        <LinearLayout
+		    android:id="@+id/misinvest"
+		    android:layout_width="wrap_content"
+		    android:layout_height="285dp"
+		    android:layout_margin="5dp"
+		    android:orientation="horizontal">
+
+	    <ImageView
+	        android:id="@+id/libro_secretgardeninvest"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:src="@drawable/articulo_pequeno_interfaces" />
+	    <ImageView
+	        android:id="@+id/treeinvest"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:src="@drawable/tree_article_image500x189" />
+	    <ImageView
+	        android:id="@+id/zeldainvest"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:src="@drawable/book_secret_garden320x480" />
+	    </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/misarticulos"
+        android:layout_width="75dp"
+        android:layout_height="300dp"
+        android:layout_alignBaseline="@+id/misinvestigaciones"
+        android:layout_alignBottom="@+id/misinvestigaciones"
+        android:layout_toRightOf="@+id/horizontalScrollViewInvest"
+        android:text="Artics" />
+    
+        <HorizontalScrollView
+        android:id="@+id/horizontalScrollViewartic"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/misarticulos"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/misarticulos"
+        android:background="@drawable/background_rectangle_borderlines"
+        android:visibility="visible" >
+        <LinearLayout
+		    android:id="@+id/misartics"
+		    android:layout_width="wrap_content"
+		    android:layout_height="285dp"
+		    android:layout_margin="5dp"
+		    android:orientation="horizontal">
+
+	    <ImageView
+	        android:id="@+id/libro_secretgardenmisartics"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:src="@drawable/articulo_pequeno_interfaces" />
+
+	    <ImageButton
+	        android:id="@+id/content_inside5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_marginBottom="3dp"
+	        android:layout_marginLeft="3dp"
+	        android:layout_marginRight="3dp"
+	        android:layout_marginTop="3dp"
+	        android:background="@android:color/transparent"
+	        android:src="@drawable/book_secret_garden320x480" />
+
+	    <ImageView
+	        android:id="@+id/treemisartics"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:src="@drawable/tree_article_image500x189" />
+	    <ImageView
+	        android:id="@+id/zeldamisartics"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:src="@drawable/book_secret_garden320x480" />
+	    </LinearLayout>
+
+    </HorizontalScrollView>
+
+	<Button
+	    android:id="@+id/historial"
+	    android:layout_width="75dp"
+	    android:layout_height="300dp"
+	    android:layout_above="@+id/misarticulos"
+	    android:layout_toRightOf="@+id/horizontalScrollViewfav"
+	    android:text="Histo" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/historial"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/historial"
+        android:background="@drawable/background_rectangle_borderlines"
+        android:visibility="visible" >
+
+        <GridLayout
+            android:id="@+id/GridL1"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_margin="5dp"
+            android:columnCount="3" >
+
+			<LinearLayout
+		        android:id="@+id/historialL1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_column="0"
+	            android:layout_row="0"
+	            android:layout_margin="5dp"
+		        android:orientation="vertical" >
+
+	            <TextView
+	                android:id="@+id/historial1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/background_rectangle_borderlines"
+	                android:padding="4dp"
+	                android:text=" Seleccionaste como favorita a la investigación \n de Francisco Gamundi &apos;El totalitarismo&apos; " />
+
+	            <TextView
+	                android:id="@+id/fecha1"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:layout_gravity="right|center_vertical"
+	                android:background="@drawable/background_rectangle_borderlines"
+	                android:padding="4dp"
+	                android:text="01/03/2014" />
+
+            </LinearLayout>
+             <LinearLayout
+		        android:id="@+id/historialL2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_column="1"
+	            android:layout_row="0"
+	            android:layout_margin="5dp"
+		        android:orientation="vertical" >
+
+	            <TextView
+	                android:id="@+id/historial2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/background_rectangle_blue"
+	                android:padding="4dp"
+	                android:text="Seleccionaste como favorita a la investigación \n de Juan Díaz 'El Medioevo'" /> />
+
+	            <TextView
+	                android:id="@+id/fecha2"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:layout_gravity="right|center_vertical"
+	                android:background="@drawable/background_rectangle_blue"
+	                android:padding="4dp"
+	                android:text="10/03/2014" />
+
+            </LinearLayout>
+           	<LinearLayout
+		        android:id="@+id/historialL3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_column="2"
+	            android:layout_row="0"
+	            android:layout_margin="5dp"
+		        android:orientation="vertical" >
+
+	            <TextView
+	                android:id="@+id/historial3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/background_rectangle_borderlines"
+	                android:padding="4dp"
+	                android:text="Leíste el artículo de Dan Staff\n'Comportamientos primitivos'" /> />
+
+	            <TextView
+	                android:id="@+id/fecha3"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:layout_gravity="right|center_vertical"
+	                android:background="@drawable/background_rectangle_borderlines"
+	                android:padding="4dp"
+	                android:text="14/03/2014" />
+
+            </LinearLayout>
+            <LinearLayout
+		        android:id="@+id/historialL4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_column="0"
+	            android:layout_row="1"
+	            android:layout_margin="5dp"
+		        android:orientation="vertical" >
+
+	            <TextView
+	                android:id="@+id/historial4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/background_rectangle_blue"
+	                android:padding="4dp"
+	                android:text="Haz creado un enlace entre el artículo de \n Joan Heart 'Las costumbres cristianas y \n el libro de Christian Stab 'Beaty above all''" /> />
+
+	            <TextView
+	                android:id="@+id/fecha4"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:layout_gravity="right|center_vertical"
+	                android:background="@drawable/background_rectangle_blue"
+	                android:padding="4dp"
+	                android:text="14/03/2014" />
+
+            </LinearLayout>
+            <LinearLayout
+		        android:id="@+id/historialL5"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_column="1"
+	            android:layout_row="1"
+	            android:layout_marginRight="5dp"
+
+	            android:layout_marginTop="5dp"
+		        android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/historial5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_rectangle_borderlines"
+                    android:padding="4dp"
+                    android:text="Haz creado una nota en el artículo de &apos;Ellen Page,\n &apos;Dying of a broken heart&apos;" />
+
+
+
+	            <TextView
+	                android:id="@+id/fecha5"
+	                android:layout_width="fill_parent"
+	                android:layout_height="match_parent"
+	                android:layout_gravity="right|center_vertical"
+	                android:background="@drawable/background_rectangle_borderlines"
+	                android:padding="4dp"
+	                android:text="14/03/2014" />
+
+            </LinearLayout>
+            
+        </GridLayout>
+
+    </HorizontalScrollView>
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+		<LinearLayout
+            android:id="@+id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <Button
+	            android:id="@+id/dentroHandle1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:background="@drawable/clipboard71x71" />
+            <Button
+		        android:id="@+id/lineaHandle"
+		        android:layout_width="fill_parent"
+		        android:layout_height="7dp"
+		        android:layout_marginBottom="3dp"
+		        android:background="#CC87CEFA" />
+            
+        </LinearLayout>
+
+		<HorizontalScrollView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CCEBEBEB" >
+	        <LinearLayout
+	            android:id="@+id/content_inside"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:orientation="horizontal"
+	            android:background="#CCEBEBEB" >
+                
+	            <ImageButton
+		            android:id="@+id/content_inside3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_gravity="right|center"
+		            android:layout_marginRight="3dp"
+		            android:layout_marginTop="3dp"
+		            android:layout_column="0"
+		            android:layout_marginBottom="3dp"
+		            android:layout_marginLeft="3dp"
+		            android:background="@android:color/transparent"
+		            android:src="@drawable/tree_article_image500x189" />
+	            <ImageButton
+		            android:id="@+id/content_inside4"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_gravity="right|center"
+		            android:layout_column="0"
+		            android:layout_marginRight="3dp"
+		            android:layout_marginTop="3dp"
+		            android:layout_marginBottom="3dp"
+		            android:layout_marginLeft="3dp"
+		            android:background="@android:color/transparent"
+		            android:src="@drawable/articulo_pequeno_interfaces" />
+	            <ImageButton
+		            android:id="@+id/content_inside3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_gravity="right|center"
+		            android:layout_marginRight="3dp"
+		            android:layout_marginTop="3dp"
+		            android:layout_marginBottom="3dp"
+		            android:layout_marginLeft="3dp"
+		            android:background="@android:color/transparent"
+		            android:src="@drawable/tree_article_image900x340" />
+
+	        </LinearLayout>
+	     </HorizontalScrollView>
+    </SlidingDrawer>
+
+</RelativeLayout>

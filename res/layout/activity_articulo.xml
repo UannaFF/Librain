@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="memex.interfaz.ArticuloActivity"
+    tools:ignore="MergeRootFrame" >
+    <Button
+		android:id="@+id/lineaHandle"
+		android:layout_height="fill_parent"
+		android:layout_width="15dp"
+		android:layout_marginLeft="3dp"
+		android:layout_toRightOf="@+id/relacionado"
+		android:background="#CC87CEFA" />
+    <Button
+		android:id="@+id/lineaHandleIvestigacion"
+		android:layout_height="fill_parent"
+		android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+		android:layout_width="15dp"
+		android:layout_marginRight="3dp"
+		android:background="#CC87CEFA" />
+
+    <LinearLayout
+        android:id="@+id/relacionado"
+        android:layout_width="300dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+		<LinearLayout
+	        android:id="@+id/relacionado"
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" 
+	        android:background="@drawable/background_rectangle_blue" >
+	        
+		    <ImageButton
+	            android:id="@+id/investigacionesImagen"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:layout_marginRight="1dp"
+	            android:layout_marginLeft="5dp"
+	            android:background="@android:color/transparent"
+	            android:src="@drawable/icono_enlace32x41" />
+		    
+	        <TextView
+	            android:id="@+id/enlaces_investigacion"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:text="Enlaces:"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+		</LinearLayout>
+		
+		<LinearLayout
+	        android:id="@+id/relacionado"
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" 
+	        android:background="@drawable/background_rectangle_blue" >
+	        
+		    <ImageButton
+	            android:id="@+id/investigacionesImagen"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:layout_marginRight="1dp"
+	            android:layout_marginLeft="5dp"
+	            android:background="@android:color/transparent"
+	            android:src="@drawable/icono_investigacion32px" />
+		    
+	        <TextView
+	            android:id="@+id/enlaces_investigacion"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:text="Investigaciones:"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+		</LinearLayout>
+		<LinearLayout
+	        android:id="@+id/relacionado"
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" 
+	        android:background="@drawable/background_rectangle_blue" >
+		    
+	        <TextView
+	            android:id="@+id/enlaces_investigacion"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:text="Relacionados:"
+	            android:textAppearance="?android:attr/textAppearanceLarge" />
+		</LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/investigacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titulo"
+        android:layout_alignRight="@+id/titulo"
+        android:layout_below="@+id/titulo"
+        android:layout_margin="10dp"
+        android:layout_alignBottom="@+id/titulo"
+        android:text="Investigación: Árboles Citadinos"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="700dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/lineaHandleIvestigacion"
+        android:layout_toRightOf="@+id/lineaHandle"
+        android:background="@drawable/background_rectangle_blue"
+        android:text="Título: Árbol de las afueras de Pittsburg\n	-Autor: Lagertha Lockbrock"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/investigacion"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="167dp"
+        android:src="@drawable/tree_article_image900x340" />
+    
+</RelativeLayout>
+
