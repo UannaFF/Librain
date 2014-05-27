@@ -3,6 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="memex.interfaz.PerfilActivity" >
     
+    <item android:id="@+id/agregar"
+        android:icon="@drawable/agregar72x72"
+        android:orderInCategory="2"
+        android:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+    	appLi:showAsAction="always"/>
+    
+    
     <item android:id="@+id/home"
         android:icon="@drawable/icono_home75x71"
         android:orderInCategory="1"

@@ -2,6 +2,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="memex.interfaz.HomeMemexActivity" >
+    
+    <item android:id="@+id/agregar"
+        android:icon="@drawable/agregar72x72"
+        android:orderInCategory="2"
+        android:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+    	app:showAsAction="always"/>
 
     <item android:id="@+id/perfil"
         android:icon="@drawable/icono_perfil"

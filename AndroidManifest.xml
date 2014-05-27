@@ -31,6 +31,10 @@
             android:name="memex.interfaz.ArticuloActivity"
             android:label="@string/title_activity_articulo" >
         </activity>
+        <activity
+            android:name="memex.interfaz.InvestigacionActivity"
+            android:label="@string/title_activity_investigacion" >
+        </activity>
     </application>
 
 </manifest>

@@ -117,7 +117,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="52dp"
         android:background="@android:color/transparent"
-        android:src="@drawable/agregar_portapapeles" />
+        android:src="@drawable/agregar_portapapeles72x77" />
 
     <ImageView
         android:id="@+id/imageView1"
@@ -137,6 +137,36 @@
         android:padding="10dp"
         android:text="Investigación: Árboles Citadinos"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton1"
+        android:layout_below="@+id/imageButton1"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/icono_nota2" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton1"
+        android:layout_alignRight="@+id/imageButton2"
+        android:layout_marginBottom="75dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/agregar_investigacion85x79" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton3"
+        android:layout_marginBottom="27dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/agregar_enlace" />
     
 </RelativeLayout>
 
