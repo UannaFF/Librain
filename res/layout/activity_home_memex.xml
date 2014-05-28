@@ -42,7 +42,7 @@
 	            android:src="@drawable/nota24x32" />
 	        
 	        <TextView
-	            android:id="@+id/textView1"
+	            android:id="@+id/textoZelda"
 	            android:layout_gravity="left|center"
 	            android:ellipsize = "marquee"
 	            android:lines="1"
@@ -84,6 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="5dp"
+        android:clickable="true"
         android:layout_marginLeft="-250dp"
         android:background="@drawable/background_rectangle_borderlines"
         android:orientation="vertical" >

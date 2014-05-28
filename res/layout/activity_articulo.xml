@@ -7,14 +7,14 @@
     tools:ignore="MergeRootFrame" >
     <Button
 		android:id="@+id/lineaHandle"
-		android:layout_height="fill_parent"
+		android:layout_height="595dp"
 		android:layout_width="15dp"
 		android:layout_marginLeft="3dp"
 		android:layout_toRightOf="@+id/relacionado"
 		android:background="#CC87CEFA" />
     <Button
 		android:id="@+id/lineaHandleIvestigacion"
-		android:layout_height="fill_parent"
+		android:layout_height="595dp"
 		android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
 		android:layout_width="15dp"
@@ -23,21 +23,21 @@
 
     <LinearLayout
         android:id="@+id/relacionado"
-        android:layout_width="300dp"
-        android:layout_height="fill_parent"
+        android:layout_width="400dp"
+        android:layout_height="595dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:orientation="vertical"
-        android:visibility="visible" >
+        android:visibility="gone" >
 		<LinearLayout
-	        android:id="@+id/relacionado"
-	        android:layout_width="300dp"
+	        android:id="@+id/relacionadoEnlaces"
+	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
 	        android:orientation="horizontal" 
 	        android:background="@drawable/background_rectangle_blue" >
 	        
 		    <ImageButton
-	            android:id="@+id/investigacionesImagen"
+	            android:id="@+id/EnlacesImagen"
 	            android:layout_width="wrap_content"
 	            android:layout_height="fill_parent"
 	            android:layout_marginRight="1dp"
@@ -53,11 +53,40 @@
 	            android:text="Enlaces:"
 	            android:textAppearance="?android:attr/textAppearanceLarge" />
 		</LinearLayout>
+
+		<ScrollView
+		    android:id="@+id/scrollEnlaces"
+		    android:layout_width="fill_parent"
+		    android:layout_height="460dp"
+		    android:visibility="visible" >
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp"
+		        android:orientation="vertical" >
+
+		        <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" >
+			        
+	        		<TextView
+			            android:id="@+id/nohay"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="60dp"
+			            android:gravity="center_horizontal"
+			            android:layout_gravity="center_horizontal"
+			            android:text="No se encuentra revisando ninguna investigación." />	
+				</LinearLayout> 
+		    </LinearLayout>
+		</ScrollView>
 		
 		
 		<LinearLayout
-	        android:id="@+id/relacionado"
-	        android:layout_width="300dp"
+	        android:id="@+id/relacionadoInvest"
+	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
 	        android:orientation="horizontal" 
 	        android:background="@drawable/background_rectangle_blue" >
@@ -79,9 +108,98 @@
 	            android:text="Investigaciones:"
 	            android:textAppearance="?android:attr/textAppearanceLarge" />
 		</LinearLayout>
+		
+		<ScrollView
+		    android:id="@+id/scrollInvest"
+		    android:layout_width="fill_parent"
+		    android:layout_height="460dp"
+		    android:visibility="gone" >
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical" >
+		       	<TextView
+			            android:id="@+id/nomInvest"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="1dp"
+			            android:background="@drawable/background_rectangle_borderlines"
+			            android:text=" - La influencia de los árboles en \n seres humanos.\n  -Autor: Tomás Marín" />	
+
+		        <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" >
+	        		
+		            <ImageView
+				        android:id="@+id/circulo1"
+				        android:layout_width="10dp"
+				        android:layout_height="10dp"
+				        android:layout_marginLeft="20dp"
+				        android:src="@drawable/circulo_amarillo" />
+		            <TextView
+			            android:id="@+id/nomEnlace1"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="5dp"
+			            android:text="Libro ilustrado de los árboles" />	
+			        
+				</LinearLayout> 
+				
+		        <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" >
+	        		
+		            <ImageView
+				        android:id="@+id/circulo2"
+				        android:layout_width="10dp"
+				        android:layout_height="10dp"
+				        android:layout_marginLeft="20dp"
+				        android:src="@drawable/circulo_rojo37x37" />
+		            <TextView
+			            android:id="@+id/nomEnlace2"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="5dp"
+			            android:text="Pittsburg, ciudad abandonada" />	
+			        
+				</LinearLayout> 
+				
+		        <TextView
+			            android:id="@+id/nomInvest2"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="1dp"
+			            android:background="@drawable/background_rectangle_borderlines"
+			            android:text=" - Los árboles y las ciudades.\n  -Autor: Julieta Córdoba" />	
+
+		        <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" >
+	        		
+		            <ImageView
+				        android:id="@+id/circulo3"
+				        android:layout_width="10dp"
+				        android:layout_height="10dp"
+				        android:layout_marginLeft="20dp"
+				        android:src="@drawable/circulo_verde" />
+		            <TextView
+			            android:id="@+id/nomEnlace3"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="5dp"
+			            android:text="Influencia de los arboles en las ciudades" />	
+			        
+				</LinearLayout> 
+		    </LinearLayout>
+		</ScrollView>
+		
 		<LinearLayout
-	        android:id="@+id/relacionado"
-	        android:layout_width="300dp"
+	        android:id="@+id/relacionadoRela"
+	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
 	        android:orientation="horizontal" 
 	        android:background="@drawable/background_rectangle_blue" >
@@ -91,9 +209,68 @@
 	            android:layout_width="match_parent"
 	            android:layout_height="wrap_content"
 	            android:padding="10dp"
-	            android:text="Relacionados:"
+	            android:text="--Relacionados:"
 	            android:textAppearance="?android:attr/textAppearanceLarge" />
 		</LinearLayout>
+		
+		<ScrollView
+		    android:id="@+id/scrollRelacion"
+		    android:layout_width="fill_parent"
+		    android:layout_height="460dp"
+		    android:visibility="gone" >
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:paddingTop="3dp" >
+		        <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:padding="3dp"
+			        android:background="@drawable/background_rectangle_borderlines" >
+	        		
+		            <ImageView
+				        android:id="@+id/rela1"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="5dp"
+				        android:layout_gravity="center_vertical"
+				        android:src="@drawable/libro32x23"/>
+		            <TextView
+			            android:id="@+id/textRela1"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="5dp"
+			            android:text=" Como identificar a un árbol.\n  Autor: José Mendez" />	
+			        
+				</LinearLayout> 	
+				<LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:padding="3dp"
+			        android:background="@drawable/background_rectangle_borderlines" >
+	        		
+		            <ImageView
+				        android:id="@+id/rela2"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="5dp"
+				        android:layout_gravity="center_vertical"
+				        android:src="@drawable/video30x32"/>
+		            <TextView
+			            android:id="@+id/textRela2"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="5dp"
+			            android:text=" Crecimiento del árbol de Pittsburg.\n  Autor: Josh Keimo" />	
+			        
+				</LinearLayout> 
+		        
+		    </LinearLayout>
+		</ScrollView>
     </LinearLayout>
 
     <TextView
@@ -113,9 +290,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/titulo"
-        android:layout_below="@+id/imageView1"
+        android:layout_below="@+id/imageButton3"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="-10dp"
         android:background="@android:color/transparent"
         android:src="@drawable/agregar_portapapeles72x77" />
 
@@ -147,26 +324,117 @@
         android:layout_marginTop="25dp"
         android:background="@android:color/transparent"
         android:src="@drawable/icono_nota2" />
+    
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+		<LinearLayout
+            android:id="@+id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <Button
+	            android:id="@+id/dentroHandle1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:background="@drawable/clipboard71x71" />
+            <Button
+		        android:id="@+id/lineaHandle"
+		        android:layout_width="fill_parent"
+		        android:layout_height="7dp"
+		        android:layout_marginBottom="3dp"
+		        android:background="#CC87CEFA" />
+            
+        </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageButton1"
-        android:layout_alignRight="@+id/imageButton2"
-        android:layout_marginBottom="75dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/agregar_investigacion85x79" />
+		<HorizontalScrollView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CCEBEBEB" >
+	        <LinearLayout
+	            android:id="@+id/content_inside"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:orientation="horizontal"
+	            android:background="#CCEBEBEB" >
+                
+	            <ImageButton
+		            android:id="@+id/content_inside3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_gravity="right|center"
+		            android:layout_marginRight="3dp"
+		            android:layout_marginTop="3dp"
+		            android:layout_column="0"
+		            android:layout_marginBottom="3dp"
+		            android:layout_marginLeft="3dp"
+		            android:background="@android:color/transparent"
+		            android:src="@drawable/tree_article_image500x189" />
+	            <ImageButton
+		            android:id="@+id/content_inside4"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_gravity="right|center"
+		            android:layout_column="0"
+		            android:layout_marginRight="3dp"
+		            android:layout_marginTop="3dp"
+		            android:layout_marginBottom="3dp"
+		            android:layout_marginLeft="3dp"
+		            android:background="@android:color/transparent"
+		            android:src="@drawable/articulo_pequeno_interfaces" />
+	            <ImageButton
+		            android:id="@+id/content_inside5"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_gravity="right|center"
+		            android:layout_marginRight="3dp"
+		            android:layout_marginTop="3dp"
+		            android:layout_marginBottom="3dp"
+		            android:layout_marginLeft="3dp"
+		            android:background="@android:color/transparent"
+		            android:src="@drawable/book_secret_garden320x480" />
+	            <ImageButton
+		            android:id="@+id/content_inside3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_gravity="right|center"
+		            android:layout_marginRight="3dp"
+		            android:layout_marginTop="3dp"
+		            android:layout_marginBottom="3dp"
+		            android:layout_marginLeft="3dp"
+		            android:background="@android:color/transparent"
+		            android:src="@drawable/tree_article_image900x340" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/imageButton3"
-        android:layout_marginBottom="27dp"
-        android:layout_toLeftOf="@+id/imageView1"
-        android:background="@android:color/transparent"
-        android:src="@drawable/agregar_enlace" />
+	        </LinearLayout>
+	     </HorizontalScrollView>
+    </SlidingDrawer>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/slidingDrawer1"
+            android:layout_marginBottom="47dp"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/agregar_investigacion85x79" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButton3"
+            android:layout_alignLeft="@+id/imageButton1"
+            android:layout_marginBottom="28dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/agregar_enlace" />
     
 </RelativeLayout>
 

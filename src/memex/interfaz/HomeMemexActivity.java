@@ -13,12 +13,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.TextView;
 import android.os.Build;
+import android.view.View.OnClickListener;
 
 public class HomeMemexActivity extends ActionBarActivity {
 	ScrollView listaCompartidas, listaPopulares, listaRecientes;
 	Button compart, recientes, populares;
+	TextView textoZ;
+	LinearLayout enlace;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -28,6 +33,8 @@ public class HomeMemexActivity extends ActionBarActivity {
 			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
+		textoZ = (TextView) findViewById(R.id.textoZelda);
+		textoZ.requestFocus();
 		listaCompartidas = (ScrollView) findViewById(R.id.compartidas);
 		listaPopulares  = (ScrollView) findViewById(R.id.populares);
 		listaRecientes  = (ScrollView) findViewById(R.id.recientes);
@@ -71,6 +78,17 @@ public class HomeMemexActivity extends ActionBarActivity {
             	}
             }
         });
+		enlace = (LinearLayout)findViewById(R.id.linearLayoutGrid2);
+		//Estableciendo click para el enlace
+        enlace.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+    			Intent inte = new Intent(getApplicationContext(), ArticuloActivity.class);
+    			startActivity(inte);
+                finish();
+            }
+        });
+		
 	}
 
 	@Override

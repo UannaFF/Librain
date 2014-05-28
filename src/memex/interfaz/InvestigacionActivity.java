@@ -1,18 +1,25 @@
 package memex.interfaz;
 
 import android.app.Activity;
-import android.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.os.Build;
 
-public class InvestigacionActivity extends Activity {
-
+public class InvestigacionActivity extends ActionBarActivity {
+	Button nodoP, filtro;
+	ImageButton fav;
+	LinearLayout linear;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -22,6 +29,29 @@ public class InvestigacionActivity extends Activity {
 			getFragmentManager().beginTransaction()
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
+		nodoP = (Button)findViewById(R.id.nodoPrincipal);
+		nodoP.requestFocus();
+		fav = (ImageButton)findViewById(R.id.imageButton1);
+		fav.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	/*fav.setDrawable(getApplicationContext().getResources(),
+                        R.drawable.favorito_lleno);*/
+            }
+        });
+		
+		filtro = (Button)findViewById(R.id.button1);
+		linear = (LinearLayout)findViewById(R.id.filtLin);
+		filtro.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	if(linear.getVisibility()!=View.VISIBLE) {
+            		linear.setVisibility(View.VISIBLE);
+            	} else {
+            		linear.setVisibility(View.GONE);
+            	}
+            }
+        });
 	}
 
 	@Override
@@ -37,9 +67,18 @@ public class InvestigacionActivity extends Activity {
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
+		Intent inte;
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
 			return true;
+		} else if (id==R.id.home) {
+			inte = new Intent(getApplicationContext(), HomeMemexActivity.class);
+			startActivity(inte);
+            finish();
+		} else if (id==R.id.perfil) {
+			inte = new Intent(getApplicationContext(), PerfilActivity.class);
+			startActivity(inte);
+            finish();			
 		}
 		return super.onOptionsItemSelected(item);
 	}
