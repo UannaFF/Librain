@@ -19,8 +19,10 @@
 	<LinearLayout
         android:id="@+id/linearLayoutGrid1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="210dp"
+        android:layout_marginTop="5dp"
         android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/background_rectangle_borderlines"
         android:orientation="vertical" >
         
@@ -29,7 +31,7 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="30dp"
 	        android:layout_gravity="center"
-	        android:background="@drawable/background_rectangle_borderlines"
+	        android:background="@drawable/background_rectangle_borderlines_filled"
  >
 
 	         <ImageView
@@ -49,7 +51,7 @@
         		android:maxLines="1"
 	            android:layout_width="120dp"
 	            android:layout_height="wrap_content"
-	            android:text="Zelda for Wii U porque queremos ladillar la paciencia para que esta vaina se pase"
+	            android:text="Zelda for Wii U"
 	            android:textAppearance="?android:attr/textAppearanceMedium" />
 
 	        <ImageButton
@@ -76,15 +78,26 @@
 	        android:id="@+id/news1"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:src="@drawable/articulo_pequeno_interfaces" />
-    
+            android:layout_gravity="center"
+	        android:src="@drawable/zelda_interfaces" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:text="According to an interview with Zelda producer Eiji Aounuma, new information about The Legend of Zelda will be announced at E3 2014."
+            android:textSize="13sp"
+            android:textIsSelectable="false" />
     </LinearLayout>
 	<LinearLayout
         android:id="@+id/linearLayoutGrid2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginRight="5dp"
         android:layout_marginLeft="-250dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/background_rectangle_borderlines"
         android:orientation="vertical" >
         
@@ -93,7 +106,7 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="30dp"
 	        android:layout_gravity="left|center"
-	        android:background="@drawable/background_rectangle_borderlines"
+	        android:background="@drawable/background_rectangle_borderlines_filled"
  >
 
 	         <ImageView
@@ -138,25 +151,28 @@
 	    </LinearLayout>
 		<ImageView
 		    android:id="@+id/imagen_arbol"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
 		    android:src="@drawable/tree_article_image700x264" />
 	</LinearLayout>
 
-		    <LinearLayout
-		        android:id="@+id/linearLayoutGrid4"
-		        android:layout_width="465dp"
-		        android:layout_height="fill_parent"
-		        android:layout_marginRight="5dp"
-		        android:background="@drawable/background_rectangle_borderlines"
-		        android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/linearLayoutGrid4"
+        android:layout_width="465dp"
+        android:layout_height="320dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/background_rectangle_borderlines"
+        android:orientation="vertical" >
         
 	    <LinearLayout
 	        android:id="@+id/linearLayoutGridStuff4"
 	        android:layout_width="fill_parent"
 	        android:layout_height="30dp"
 	        android:layout_gravity="center|left"
-	        android:background="@drawable/background_rectangle_borderlines"
+	        android:background="@drawable/background_rectangle_borderlines_filled"
  >
 
 	         <ImageView
@@ -174,53 +190,58 @@
 	            android:ellipsize = "marquee"
 	            android:lines="1"
         		android:maxLines="1"
-	            android:layout_width="350dp"
+	            android:layout_width="360dp"
 	            android:layout_height="wrap_content"
 	            android:text="Celebridades reaccionan a tweets"
 	            android:textAppearance="?android:attr/textAppearanceMedium" />
 
-	        <ImageButton
-	            android:id="@+id/investigaciones4"
-	            android:layout_width="wrap_content"
-	            android:layout_height="fill_parent"
-	            android:layout_gravity="right|center"
-	            android:layout_marginRight="1dp"
-	            android:layout_marginLeft="45dp"
-	            android:background="@android:color/transparent"
-	            android:src="@drawable/icono_investigacion32px" />
+            <ImageButton
+                android:id="@+id/investigaciones4"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="23dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icono_investigacion32px" />
 
-	        <TextView
+            <TextView
 	            android:id="@+id/numero_investigaciones4"
 	            android:layout_width="wrap_content"
-	            android:layout_gravity="right|center"
-	            android:layout_marginRight="5dp"
+                android:layout_marginRight="3dp"
 	            android:layout_height="wrap_content"
+                android:layout_gravity="center"
 	            android:text="100"
 	            android:textAppearance="?android:attr/textAppearanceSmall" />
 
-	    </LinearLayout>
+        </LinearLayout>
 
 	    <ImageView
 	        android:id="@+id/video_home"
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
 	        android:src="@drawable/video_home_pequeno900x463" />
 
-	    </LinearLayout>
+	</LinearLayout>
+
 	<LinearLayout
         android:id="@+id/linearLayoutGrid3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="215dp"
+        android:layout_height="320dp"
         android:layout_marginRight="5dp"
         android:background="@drawable/background_rectangle_borderlines"
         android:orientation="vertical" >
         
 	    <LinearLayout
 	        android:id="@+id/linearLayoutGridStuff3"
-	        android:layout_width="wrap_content"
+	        android:layout_width="fill_parent"
 	        android:layout_height="30dp"
 	        android:layout_gravity="center|left"
-	        android:background="@drawable/background_rectangle_borderlines"
+	        android:background="@drawable/background_rectangle_borderlines_filled"
  >
 
 	         <ImageView
@@ -249,7 +270,7 @@
 	            android:layout_height="fill_parent"
 	            android:layout_gravity="right|center"
 	            android:layout_marginRight="1dp"
-	            android:layout_marginLeft="30dp"
+	            android:layout_marginLeft="10dp"
 	            android:background="@android:color/transparent"
 	            android:src="@drawable/icono_investigacion32px" />
 
@@ -265,6 +286,11 @@
 	    </LinearLayout>
 	    <ImageView
 	        android:id="@+id/libro_secretgarden"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
 	        android:src="@drawable/book_secret_garden320x480" />
@@ -273,7 +299,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout1"
-        android:layout_width="wrap_content"
+        android:layout_width="493dp"
         android:layout_height="583dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
@@ -281,83 +307,318 @@
         android:layout_marginTop="30dp"
         android:orientation="vertical" >
 
-        <SearchView
-            android:id="@+id/searchView1"
-            android:layout_width="493dp"
-            android:layout_height="wrap_content"
-            android:iconifiedByDefault="false" >
-
-        </SearchView>
-
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+            <SearchView
+                android:id="@+id/searchView1"
+                android:layout_width="430dp"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="false">
+            </SearchView>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/imageButton"
+                android:src="@drawable/ic_microphone"
+                android:background="@android:color/transparent"
+                android:contentDescription="microphone"
+                android:alpha="0.5f"
+                android:adjustViewBounds="true" />
+        </LinearLayout>
         <Button
             android:id="@+id/invest_populares"
-            android:text="Investigaciones Populares"
+            android:text="Investigaciones Favoritas"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:background="#EBEBEB" />
+            android:background="#EBEBEB"
+            android:drawableLeft="@drawable/ic_action_collapse"
+            android:drawableRight="@drawable/ic_action_important"/>
         <ScrollView
             android:id="@+id/populares"
             android:layout_width="match_parent"
             android:layout_marginTop="5dp"
-            android:visibility="gone"
-            android:layout_height="300dp" >
+            android:layout_height="360dp" >
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:orientation="vertical" >
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
-                   	<TextView
-			            android:id="@+id/primerPopular"
-			            android:layout_gravity="center"
-	            		android:gravity="left"
-			            android:ellipsize = "marquee"
-			            android:lines="2"
-		        		android:maxLines="2"
-			            android:layout_width="350dp"
-			            android:layout_height="wrap_content"
-			            android:text="Influencia de las redes sociales \n Ryan Seacrest"
-			            android:textAppearance="?android:attr/textAppearanceMedium" />
-                   	 <ImageButton
-	            android:id="@+id/enlaces3"
-	            android:layout_width="wrap_content"
-	            android:layout_height="fill_parent"
-	            android:layout_gravity="right|center"
-	            android:layout_marginRight="1dp"
-	            android:layout_marginLeft="85dp"
-	            android:background="@android:color/transparent"
-	            android:src="@drawable/icono_enlace32x41" />
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_rectangle_semi_borderlines">
+                    <TextView
+                        android:id="@+id/primerPopular"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:ellipsize = "marquee"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:text="Influencia de las redes sociales \n   Ryan Seacrest"
 
-	        <TextView
-	            android:id="@+id/numenlaces3"
-	            android:layout_width="wrap_content"
-	            android:layout_gravity="center"
-	            android:gravity="center"
-	            android:layout_marginRight="5dp"
-	            android:layout_height="wrap_content"
-	            android:text="100"
-	            android:textAppearance="?android:attr/textAppearanceSmall" />
-                   	
-                   	
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <ImageButton
+                        android:id="@+id/enlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icono_enlace32x41" />
+
+                    <TextView
+                        android:id="@+id/numenlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="98"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_rectangle_semi_borderlines">
+                    <TextView
+                        android:id="@+id/primerPopular"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:ellipsize = "marquee"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pensamiento del totalitarismo \n   Nelson Tepedino"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <ImageButton
+                        android:id="@+id/enlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icono_enlace32x41" />
 
+                    <TextView
+                        android:id="@+id/numenlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="43"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_rectangle_semi_borderlines">
+                    <TextView
+                        android:id="@+id/primerPopular"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:ellipsize = "marquee"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:text="Liberalismo económico \n   Anna Gomez"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <ImageButton
+                        android:id="@+id/enlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icono_enlace32x41" />
+
+                    <TextView
+                        android:id="@+id/numenlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="76"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_rectangle_semi_borderlines">
+                    <TextView
+                        android:id="@+id/primerPopular"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:ellipsize = "marquee"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:text="Totalitarismo en Venezuela \n   Jan Marcano"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <ImageButton
+                        android:id="@+id/enlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icono_enlace32x41" />
+
+                    <TextView
+                        android:id="@+id/numenlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="24"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_rectangle_semi_borderlines">
+                    <TextView
+                        android:id="@+id/primerPopular"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:ellipsize = "marquee"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:text="La lengua española en el siglo XXI \n   Don Cervantes"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <ImageButton
+                        android:id="@+id/enlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icono_enlace32x41" />
+
+                    <TextView
+                        android:id="@+id/numenlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="157"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_rectangle_semi_borderlines">
+                    <TextView
+                        android:id="@+id/primerPopular"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:ellipsize = "marquee"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ética computista \n   Ricardo Monascal"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <ImageButton
+                        android:id="@+id/enlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icono_enlace32x41" />
+
+                    <TextView
+                        android:id="@+id/numenlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="48"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_rectangle_semi_borderlines">
+                    <TextView
+                        android:id="@+id/primerPopular"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:ellipsize = "marquee"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:text="Influencia de las redes sociales \n   Ryan Seacrest"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                    <ImageButton
+                        android:id="@+id/enlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icono_enlace32x41" />
+
+                    <TextView
+                        android:id="@+id/numenlaces3"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="98"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
             </LinearLayout>
+
+
 
         </ScrollView>
 
         <Button
             android:id="@+id/invest_recientes"
-            android:text="Investigaciones Recientes"
+            android:text="Investigaciones Populares"
             android:layout_width="fill_parent"
             android:layout_marginTop="15dp"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_gravity="center"
-            android:background="#EBEBEB" />
+            android:background="#EBEBEB"
+            android:drawableLeft="@drawable/ic_action_expand"/>
         <ScrollView
             android:id="@+id/recientes"
             android:layout_width="match_parent"
@@ -416,8 +677,10 @@
             android:layout_width="fill_parent"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:layout_height="wrap_content"
-            android:background="#EBEBEB" />
+            android:layout_height="40dp"
+            android:background="#EBEBEB"
+            android:drawableLeft="@drawable/ic_action_expand"
+            android:drawableRight="@drawable/ic_action_share"/>
 
         <ScrollView
             android:id="@+id/compartidas"
@@ -478,7 +741,7 @@
     <Button
         android:id="@+id/teinteresaria"
         android:text="Te podría interesar"
-        android:layout_width="690dp"
+        android:layout_width="685dp"
         android:layout_gravity="center"
         android:background="#EBEBEB"
         android:layout_height="38dp"
