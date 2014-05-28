@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/titulo"
+        android:inputType="text"
+        android:layout_width="538dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="Titulo" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar archivo"
+            android:id="@+id/button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ó"
+            android:id="@+id/textView"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="160dp" />
+
+        <EditText
+            android:id="@+id/link"
+            android:inputType="text"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@+id/textView"
+            android:fontFamily="sans-serif"
+            android:hint="Link"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo:"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:id="@+id/textTipo"
+            android:layout_toRightOf="@+id/button"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/textTipo">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton2"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableRight="@drawable/ic_microphone"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioButton2"
+                    android:id="@+id/radioButton3"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="right"
+                    android:drawableRight="@drawable/video30x32"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/libro32x23"
+                    android:id="@+id/radioButton4"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/radioButton2"
+                    android:layout_gravity="center_horizontal" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/radioButton3"
+                    android:drawableRight="@drawable/imagen32x26"
+                    android:id="@+id/radioButton5"
+                    android:layout_gravity="right" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/nota24x32"
+                    android:id="@+id/radioButton6"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/radioButton3"
+                    android:layout_below="@+id/radioButton4"
+                    android:layout_gravity="right" />
+            </RelativeLayout>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

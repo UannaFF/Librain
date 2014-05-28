@@ -46,13 +46,13 @@
 
     </LinearLayout>
 
-    <Button
+    <ImageButton
         android:id="@+id/favoritos"
         android:layout_width="75dp"
         android:layout_height="300dp"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/linearLayout1"
-        android:text="Favos" />
+        android:src="@drawable/bt_favoritas"/>
     <HorizontalScrollView
         android:id="@+id/horizontalScrollViewfav"
         android:layout_width="800dp"
@@ -92,13 +92,13 @@
 
     </HorizontalScrollView>
 
-    <Button
+    <ImageButton
         android:id="@+id/misinvestigaciones"
         android:layout_width="75dp"
         android:layout_height="300dp"
         android:layout_alignBottom="@+id/linearLayout1"
         android:layout_alignLeft="@+id/favoritos"
-        android:text="Invest" />
+        android:src="@drawable/bt_investigaciones" />
     <HorizontalScrollView
         android:id="@+id/horizontalScrollViewInvest"
         android:layout_width="800dp"
@@ -134,14 +134,14 @@
 
     </HorizontalScrollView>
 
-    <Button
+    <ImageButton
         android:id="@+id/misarticulos"
         android:layout_width="75dp"
         android:layout_height="300dp"
         android:layout_alignBaseline="@+id/misinvestigaciones"
         android:layout_alignBottom="@+id/misinvestigaciones"
         android:layout_toRightOf="@+id/horizontalScrollViewInvest"
-        android:text="Artics" />
+        android:src="@drawable/bt_articulos" />
     
         <HorizontalScrollView
         android:id="@+id/horizontalScrollViewartic"
@@ -190,13 +190,14 @@
 
     </HorizontalScrollView>
 
-	<Button
+	<ImageButton
 	    android:id="@+id/historial"
 	    android:layout_width="75dp"
 	    android:layout_height="300dp"
 	    android:layout_above="@+id/misarticulos"
 	    android:layout_toRightOf="@+id/horizontalScrollViewfav"
-	    android:text="Histo" />
+        android:src="@drawable/bt_historial"
+        />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView1"
