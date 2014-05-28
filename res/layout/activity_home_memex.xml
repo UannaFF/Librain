@@ -327,7 +327,7 @@
                 android:src="@drawable/ic_microphone"
                 android:background="@android:color/transparent"
                 android:contentDescription="microphone"
-                android:alpha="0.5f"
+                android:alpha="0.5"
                 android:adjustViewBounds="true" />
         </LinearLayout>
         <Button

@@ -3,6 +3,7 @@ package memex.interfaz;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.app.Activity;
+import android.app.Dialog;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,13 +16,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.os.Build;
 
 public class PerfilActivity extends ActionBarActivity {
 	private HorizontalScrollView horizontalScrollViewfav, horizontalScrollViewInvest, horizontalScrollViewartic, horizontalScrollView1;
-	private Button favoritos, historial, misinvestigaciones, misarticulos;
+	private ImageButton favoritos, historial, misinvestigaciones, misarticulos;
 	private String[] amigos = { "Ryan Gossling", "Rupert Green", "Anna Gomez", "Francisco Gamundi",
 			"Erik Dell", "Bill Clinton", "Rafael Correa", "Ellen Page", "Emma Watson", "Marion Cotillard" };
 	private ListView lv1;
@@ -39,10 +41,10 @@ public class PerfilActivity extends ActionBarActivity {
 		horizontalScrollView1 = (HorizontalScrollView) findViewById(R.id.horizontalScrollView1);
 		horizontalScrollViewartic = (HorizontalScrollView) findViewById(R.id.horizontalScrollViewartic);
 		
-		favoritos = (Button) findViewById(R.id.favoritos);
-		historial  = (Button) findViewById(R.id.historial);
-		misinvestigaciones  = (Button) findViewById(R.id.misinvestigaciones);
-		misarticulos  = (Button) findViewById(R.id.misarticulos);
+		favoritos = (ImageButton) findViewById(R.id.favoritos);
+		historial  = (ImageButton) findViewById(R.id.historial);
+		misinvestigaciones  = (ImageButton) findViewById(R.id.misinvestigaciones);
+		misarticulos  = (ImageButton) findViewById(R.id.misarticulos);
 		
 		favoritos.setOnClickListener(new Button.OnClickListener() {
             @Override
@@ -122,6 +124,11 @@ public class PerfilActivity extends ActionBarActivity {
 			Intent inte = new Intent(getApplicationContext(), HomeMemexActivity.class);
 			startActivity(inte);
             finish();
+		} else if(id == R.id.agregar) {
+	    	final Dialog dialog = new Dialog(this);
+	        dialog.setContentView(R.layout.dialog_articulo);
+	        dialog.setTitle("AGREGAR ARCHIVO");
+	        dialog.show();
 		}
 		return super.onOptionsItemSelected(item);
 	}

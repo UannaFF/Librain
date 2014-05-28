@@ -1,6 +1,7 @@
 package memex.interfaz;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.app.Fragment;
@@ -20,6 +21,7 @@ public class InvestigacionActivity extends ActionBarActivity {
 	Button nodoP, filtro;
 	ImageButton fav;
 	LinearLayout linear;
+	boolean favorit=false;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -35,8 +37,13 @@ public class InvestigacionActivity extends ActionBarActivity {
 		fav.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
-            	/*fav.setDrawable(getApplicationContext().getResources(),
-                        R.drawable.favorito_lleno);*/
+            	if(!favorit) {
+            		fav.setImageResource(R.drawable.favorito_lleno);
+            		favorit= !favorit;
+            	} else {
+            		fav.setImageResource(R.drawable.favorito_vacio82x79);
+            		favorit= !favorit;
+            	}
             }
         });
 		
@@ -79,6 +86,11 @@ public class InvestigacionActivity extends ActionBarActivity {
 			inte = new Intent(getApplicationContext(), PerfilActivity.class);
 			startActivity(inte);
             finish();			
+		} else if(id == R.id.agregar) {
+	    	final Dialog dialog = new Dialog(this);
+	        dialog.setContentView(R.layout.dialog_articulo);
+	        dialog.setTitle("AGREGAR ARCHIVO");
+	        dialog.show();
 		}
 		return super.onOptionsItemSelected(item);
 	}

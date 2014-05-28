@@ -1,8 +1,11 @@
 package memex.interfaz;
 
+
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.app.Activity;
+import android.app.Dialog;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +14,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -130,6 +135,15 @@ public class ArticuloActivity extends ActionBarActivity {
 			inte = new Intent(getApplicationContext(), PerfilActivity.class);
 			startActivity(inte);
             finish();			
+		} else if(id == R.id.agregar) {
+	    	final Dialog dialog = new Dialog(this);
+	        dialog.setContentView(R.layout.dialog_articulo);
+	        dialog.setTitle("AGREGAR ARCHIVO");
+	        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+	        lp.copyFrom(dialog.getWindow().getAttributes());
+	        lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
+	        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+	        dialog.show();
 		}
 		return super.onOptionsItemSelected(item);
 	}

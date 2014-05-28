@@ -18,6 +18,7 @@
 		android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
 		android:layout_width="15dp"
+		
 		android:layout_marginRight="3dp"
 		android:background="#CC87CEFA" />
 
@@ -28,7 +29,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:orientation="vertical"
-        android:visibility="gone" >
+        android:visibility="visible" >
 		<LinearLayout
 	        android:id="@+id/relacionadoEnlaces"
 	        android:layout_width="fill_parent"
@@ -57,8 +58,8 @@
 		<ScrollView
 		    android:id="@+id/scrollEnlaces"
 		    android:layout_width="fill_parent"
-		    android:layout_height="460dp"
-		    android:visibility="visible" >
+		    android:layout_height="450dp"
+		    android:visibility="gone" >
 
 		    <LinearLayout
 		        android:layout_width="fill_parent"
@@ -112,8 +113,8 @@
 		<ScrollView
 		    android:id="@+id/scrollInvest"
 		    android:layout_width="fill_parent"
-		    android:layout_height="460dp"
-		    android:visibility="gone" >
+		    android:layout_height="450dp"
+		    android:visibility="visible" >
 
 		    <LinearLayout
 		        android:layout_width="fill_parent"
@@ -216,7 +217,7 @@
 		<ScrollView
 		    android:id="@+id/scrollRelacion"
 		    android:layout_width="fill_parent"
-		    android:layout_height="460dp"
+		    android:layout_height="450dp"
 		    android:visibility="gone" >
 
 		    <LinearLayout
