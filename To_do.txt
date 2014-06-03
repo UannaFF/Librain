@@ -1,0 +1,30 @@
+INTERFACES:
+-Home:
+	1.- Hacer que se agregue un artículo(hacerlo con la visibility)
+	2.- Hacer que cambien las flechitas cuand se agranda lo de favoritos, compartidos y eso.
+	3.- Hacer clickable a alguna de las investigaciones favoritas, compartidas o populares para abrirla.
+	4.- Hacer una notificación del perfil para verla cuando se le de al icono de la barra y que adentro de esa pequeña sea como la de facebook,
+		con un link que diga, ir al perfil.
+	5.- Lo ideal sería darle click a un video.
+	
+-Articulo:
+	1.- Ver si podemos poner un video de youtube y listo.
+	2.- Agrandar la letra de los enlaces, relacionados y eso.
+	3.- Ponerle un ícono a la barra que abre las investigaciones.
+	4.- Hacer los pop ups de todos los botones con su funcionalidad cableada.
+		-Deberíamos poder abrir un enlace de los de la izquierda, un articulo relacionado y una investigación que tenga ese artículo.
+	
+-Investigacion:
+	1.- Hacer todas las imagenes en photoshop con las conexiones, para ponerle los botones encima.
+		-Se deberían hacer como 3 investigaciones o 4.
+	2.- Arreglar los botones para que esten fixed y que funcione el scroll horizontal con el scroll vertical.
+	3.- Arreglar el boton de búsqueda.
+	4.- Tener para una de las investigaciones una alternativa de filtro, para probar cuando se muestra todo y cuando hay por lo menos un filtro.
+	5.- Tener la vista para cuando se esta agregando un enlace, derivada de esta.
+	6.- Poder arrastrar algo del portapapeles para agregarlo en la investigacion, se tiene que hacer el pop up de esto.
+	
+-Perfil:
+	1.- Arreglar la vista de investigaicones y articulos como el portapapeles.
+	2.- Hacer popup de información.
+	
+Agrega lo que falte y ve marcando lo que hagas c:
