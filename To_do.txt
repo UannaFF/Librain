@@ -17,11 +17,12 @@ INTERFACES:
 -Investigacion:
 	1.- Hacer todas las imagenes en photoshop con las conexiones, para ponerle los botones encima.
 		-Se deberían hacer como 3 investigaciones o 4.
-	2.- Arreglar los botones para que esten fixed y que funcione el scroll horizontal con el scroll vertical.
+	2.- Arreglar los botones para que esten fixed. 
 	3.- Arreglar el boton de búsqueda.
 	4.- Tener para una de las investigaciones una alternativa de filtro, para probar cuando se muestra todo y cuando hay por lo menos un filtro.
 	5.- Tener la vista para cuando se esta agregando un enlace, derivada de esta.
 	6.- Poder arrastrar algo del portapapeles para agregarlo en la investigacion, se tiene que hacer el pop up de esto.
+	------Listo------7.- que funcione el scroll horizontal con el scroll vertical.
 	
 -Perfil:
 	1.- Arreglar la vista de investigaicones y articulos como el portapapeles.

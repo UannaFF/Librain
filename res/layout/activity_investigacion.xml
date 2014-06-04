@@ -3,24 +3,23 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#151515"
+    android:background="@drawable/investigacion1_2"
     tools:context="memex.interfaz.ArticuloActivity"
     tools:ignore="MergeRootFrame" >
 
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="match_parent"
-        android:layout_height="620dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true" >
 
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:minWidth="600dp"
-        android:layout_alignParentLeft="true"
          >
 
         <RelativeLayout
@@ -32,19 +31,6 @@
             android:minWidth="600dp"
             android:orientation="vertical" >
 
-            <Button
-                android:id="@+id/nodoPrincipal"
-                android:layout_width="300dp"
-                android:layout_height="200dp"
-                android:layout_centerHorizontal="true"
-                android:layout_centerInParent="true"
-                android:layout_centerVertical="true"
-                android:background="@drawable/back__nodos_investigacion"
-                android:drawableLeft="@drawable/imagen_grande"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="Árbol de Pittsburg" />
-
             <LinearLayout
                 android:id="@+id/filtLin"
                 android:layout_width="90dp"
@@ -53,7 +39,7 @@
                 android:layout_alignLeft="@+id/button1"
                 android:background="@drawable/back_linea"
                 android:orientation="vertical"
-                android:visibility="gone" >
+                android:visibility="visible" >
 
                 <CheckBox
                     android:id="@+id/todos"
@@ -182,154 +168,76 @@
                 android:background="@android:color/transparent"
                 android:src="@drawable/esquema82x82" />
 
-            <Button
-                android:id="@+id/nodoSecundario"
-                android:layout_width="200dp"
-                android:layout_height="100dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="24dp"
-                android:layout_toRightOf="@+id/nodoPrincipal"
-                android:background="@drawable/back__nodos_investigacion"
-                android:drawableLeft="@drawable/video30x32"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="Arbolera" />
-
-                        <Button
-                            android:id="@+id/nodoSecundario2"
-                            android:layout_width="200dp"
-                            android:layout_height="100dp"
-                            android:layout_alignBottom="@+id/button1"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginRight="123dp"
-                            android:background="@drawable/back__nodos_investigacion"
-                            android:drawableLeft="@drawable/libro32x23"
-                            android:gravity="center"
-                            android:padding="10dp"
-                            android:text="Árbol de patria" />
+                                 <Button
+                                     android:id="@+id/nodoPrincipal"
+                                     android:layout_width="300dp"
+                                     android:layout_height="200dp"
+                                     android:layout_alignBottom="@+id/filtLin"
+                                     android:layout_marginBottom="37dp"
+                                     android:layout_marginLeft="97dp"
+                                     android:layout_toRightOf="@+id/nodoSecundario2"
+                                     android:background="@drawable/back__nodos_investigacion"
+                                     android:drawableLeft="@drawable/imagen_grande"
+                                     android:gravity="center"
+                                     android:padding="10dp"
+                                     android:text="Árbol de Pittsburg" />
 
                                  <Button
                                      android:id="@+id/nodoTerciario"
                                      android:layout_width="100dp"
                                      android:layout_height="50dp"
-                                     android:layout_alignParentRight="true"
-                                     android:layout_alignTop="@+id/searchView1"
-                                     android:layout_marginTop="500dp"
+                                     android:layout_above="@+id/imageView2"
+                                     android:layout_marginLeft="29dp"
+                                     android:layout_toRightOf="@+id/imageView2"
                                      android:background="@drawable/back__nodos_investigacion"
                                      android:drawableLeft="@drawable/libro32x23"
                                      android:gravity="center"
                                      android:padding="10dp"
                                      android:text="Mina" />
 
+                                 <Button
+                                     android:id="@+id/nodoSecundario"
+                                     android:layout_width="200dp"
+                                     android:layout_height="100dp"
+                                     android:layout_above="@+id/imageButton1"
+                                     android:layout_toRightOf="@+id/nodoPrincipal"
+                                     android:background="@drawable/back__nodos_investigacion"
+                                     android:drawableLeft="@drawable/video30x32"
+                                     android:gravity="center"
+                                     android:padding="10dp"
+                                     android:text="Arbolera" />
+
+                                 <Button
+                                     android:id="@+id/nodoSecundario2"
+                                     android:layout_width="200dp"
+                                     android:layout_height="100dp"
+                                     android:layout_alignLeft="@+id/searchView1"
+                                     android:layout_alignTop="@+id/filtLin"
+                                     android:background="@drawable/back__nodos_investigacion"
+                                     android:drawableLeft="@drawable/libro32x23"
+                                     android:gravity="center"
+                                     android:padding="10dp"
+                                     android:text="Árbol de patria" />
+
                                  <ImageView
                                      android:id="@+id/imageView1"
-                                     android:layout_width="50dp"
-                                     android:layout_height="50dp"
-                                     android:layout_above="@+id/nodoSecundario2"
-                                     android:layout_marginBottom="116dp"
-                                     android:layout_toRightOf="@+id/nodoSecundario"
+                                     android:layout_width="35dp"
+                                     android:layout_height="35dp"
+                                     android:layout_alignTop="@+id/nodoTerciario"
+                                     android:layout_toRightOf="@+id/nodoPrincipal"
                                      android:src="@drawable/trespuntos" />
 
                                  <ImageView
                                      android:id="@+id/imageView2"
-                                     android:layout_width="50dp"
-                                     android:layout_height="50dp"
-                                     android:layout_alignTop="@+id/imageButton3"
-                                     android:layout_marginRight="-950dp"
-                                     android:layout_toLeftOf="@+id/nodoSecundario2"
+                                     android:layout_width="25dp"
+                                     android:layout_height="25dp"
+                                     android:layout_alignTop="@+id/nodoSecundario"
+                                     android:layout_marginLeft="42dp"
+                                     android:layout_toRightOf="@+id/nodoSecundario"
                                      android:src="@drawable/trespuntos" />
 
         </RelativeLayout>
     </HorizontalScrollView>
     </ScrollView>
-        <SlidingDrawer
-        android:id="@+id/slidingDrawer1"
-        android:layout_width="fill_parent"
-        android:layout_height="300dp"
-        android:layout_alignParentBottom="true"
-        android:content="@+id/content"
-        android:handle="@+id/handle" >
-		<LinearLayout
-            android:id="@+id/handle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical">
-            <Button
-	            android:id="@+id/dentroHandle1"
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:layout_gravity="center"
-	            android:background="@drawable/clipboard71x71" />
-            <Button
-		        android:id="@+id/lineaHandle"
-		        android:layout_width="fill_parent"
-		        android:layout_height="7dp"
-		        android:layout_marginBottom="3dp"
-		        android:background="#CC87CEFA" />
-            
-        </LinearLayout>
 
-		<HorizontalScrollView
-            android:id="@+id/content"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#CCEBEBEB" >
-	        <LinearLayout
-	            android:id="@+id/content_inside"
-	            android:layout_width="wrap_content"
-	            android:layout_height="match_parent"
-	            android:orientation="horizontal"
-	            android:background="#CCEBEBEB" >
-                
-	            <ImageButton
-		            android:id="@+id/content_inside3"
-		            android:layout_width="wrap_content"
-		            android:layout_height="fill_parent"
-		            android:layout_gravity="right|center"
-		            android:layout_marginRight="3dp"
-		            android:layout_marginTop="3dp"
-		            android:layout_column="0"
-		            android:layout_marginBottom="3dp"
-		            android:layout_marginLeft="3dp"
-		            android:background="@android:color/transparent"
-		            android:src="@drawable/tree_article_image500x189" />
-	            <ImageButton
-		            android:id="@+id/content_inside4"
-		            android:layout_width="wrap_content"
-		            android:layout_height="fill_parent"
-		            android:layout_gravity="right|center"
-		            android:layout_column="0"
-		            android:layout_marginRight="3dp"
-		            android:layout_marginTop="3dp"
-		            android:layout_marginBottom="3dp"
-		            android:layout_marginLeft="3dp"
-		            android:background="@android:color/transparent"
-		            android:src="@drawable/articulo_pequeno_interfaces" />
-	            <ImageButton
-		            android:id="@+id/content_inside5"
-		            android:layout_width="wrap_content"
-		            android:layout_height="fill_parent"
-		            android:layout_gravity="right|center"
-		            android:layout_marginRight="3dp"
-		            android:layout_marginTop="3dp"
-		            android:layout_marginBottom="3dp"
-		            android:layout_marginLeft="3dp"
-		            android:background="@android:color/transparent"
-		            android:src="@drawable/book_secret_garden320x480" />
-	            <ImageButton
-		            android:id="@+id/content_inside3"
-		            android:layout_width="wrap_content"
-		            android:layout_height="fill_parent"
-		            android:layout_gravity="right|center"
-		            android:layout_marginRight="3dp"
-		            android:layout_marginTop="3dp"
-		            android:layout_marginBottom="3dp"
-		            android:layout_marginLeft="3dp"
-		            android:background="@android:color/transparent"
-		            android:src="@drawable/tree_article_image900x340" />
-
-	        </LinearLayout>
-	     </HorizontalScrollView>
-    </SlidingDrawer>
 </RelativeLayout>
