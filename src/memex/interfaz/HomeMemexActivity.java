@@ -14,11 +14,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.os.Build;
 import android.view.View.OnClickListener;
 
@@ -124,7 +126,27 @@ public class HomeMemexActivity extends ActionBarActivity {
 		} else if(id == R.id.agregar) {
 	    	final Dialog dialog = new Dialog(this);
 	        dialog.setContentView(R.layout.dialog_articulo);
+	        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+	        lp.copyFrom(dialog.getWindow().getAttributes());
+	        lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
+	        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
 	        dialog.setTitle("AGREGAR ARCHIVO");
+	        //Acción de aceptar y cancelar
+	        dialog.findViewById(R.id.aceptarbutton).setOnClickListener(new Button.OnClickListener(){
+	            @Override
+	            public void onClick(View v) {
+	            	//Poner set view visible
+	            	Toast.makeText(getApplicationContext(), "Se ha agregado su artículo", Toast.LENGTH_SHORT).show();
+	            	dialog.dismiss();
+	            }
+	        });
+	        
+	        dialog.findViewById(R.id.cancelarbutton).setOnClickListener(new Button.OnClickListener(){
+	            @Override
+	            public void onClick(View v) {
+	            	dialog.dismiss();
+	            }
+	        });
 	        dialog.show();
 		}
 		return super.onOptionsItemSelected(item);

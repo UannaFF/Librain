@@ -1,11 +1,11 @@
 INTERFACES:
 -Home:
-	1.- Hacer que se agregue un artículo(hacerlo con la visibility)
-	2.- Hacer que cambien las flechitas cuand se agranda lo de favoritos, compartidos y eso.
-	3.- Hacer clickable a alguna de las investigaciones favoritas, compartidas o populares para abrirla.
-	4.- Hacer una notificación del perfil para verla cuando se le de al icono de la barra y que adentro de esa pequeña sea como la de facebook,
+	1.- Hacer que cambien las flechitas cuand se agranda lo de favoritos, compartidos y eso.
+	2.- Hacer clickable a alguna de las investigaciones favoritas, compartidas o populares para abrirla.
+	3.- Hacer una notificación del perfil para verla cuando se le de al icono de la barra y que adentro de esa pequeña sea como la de facebook,
 		con un link que diga, ir al perfil.
-	5.- Lo ideal sería darle click a un video.
+	4.- Lo ideal sería darle click a un video.
+	------MedioListo------5.- Arreglar Portapepeles
 	
 -Articulo:
 	1.- Ver si podemos poner un video de youtube y listo.
@@ -25,7 +25,8 @@ INTERFACES:
 	------Listo------7.- que funcione el scroll horizontal con el scroll vertical.
 	
 -Perfil:
-	1.- Arreglar la vista de investigaicones y articulos como el portapapeles.
+	------MedioListo------1.- Arreglar la vista de investigaicones y articulos como el portapapeles.
 	2.- Hacer popup de información.
+	------Listo------3.- Hacer que se agregue un artículo(hacerlo con la visibility)
 	
 Agrega lo que falte y ve marcando lo que hagas c:

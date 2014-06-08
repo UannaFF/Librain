@@ -119,7 +119,7 @@
 	        android:id="@+id/libro_secretgardeninvest"
 	        android:layout_width="wrap_content"
 	        android:layout_height="fill_parent"
-	        android:src="@drawable/articulo_pequeno_interfaces" />
+	        android:src="@drawable/invest1" />
 	    <ImageView
 	        android:id="@+id/treeinvest"
 	        android:layout_width="wrap_content"
@@ -163,29 +163,32 @@
 	        android:id="@+id/libro_secretgardenmisartics"
 	        android:layout_width="wrap_content"
 	        android:layout_height="fill_parent"
-	        android:src="@drawable/articulo_pequeno_interfaces" />
+	        android:src="@drawable/ballet_pic" />
 
 	    <ImageButton
 	        android:id="@+id/content_inside5"
 	        android:layout_width="wrap_content"
-	        android:layout_height="fill_parent"
-	        android:layout_marginBottom="3dp"
-	        android:layout_marginLeft="3dp"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="-236dp"
 	        android:layout_marginRight="3dp"
-	        android:layout_marginTop="3dp"
 	        android:background="@android:color/transparent"
-	        android:src="@drawable/book_secret_garden320x480" />
+	        android:src="@drawable/ballet_pic_arriba" />
 
 	    <ImageView
-	        android:id="@+id/treemisartics"
+	        android:id="@+id/mikhail"
 	        android:layout_width="wrap_content"
 	        android:layout_height="fill_parent"
-	        android:src="@drawable/tree_article_image500x189" />
+	        android:src="@drawable/mikhail"
+	        android:visibility="gone" />
+
 	    <ImageView
-	        android:id="@+id/zeldamisartics"
+	        android:id="@+id/mikhail_arriba"
 	        android:layout_width="wrap_content"
 	        android:layout_height="fill_parent"
-	        android:src="@drawable/book_secret_garden320x480" />
+	        android:layout_marginLeft="-490dp"
+	        android:src="@drawable/mikhail_arriba"
+	        android:visibility="gone" />
+
 	    </LinearLayout>
 
     </HorizontalScrollView>

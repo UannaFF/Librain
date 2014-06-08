@@ -12,12 +12,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import android.os.Build;
 
@@ -127,7 +130,32 @@ public class PerfilActivity extends ActionBarActivity {
 		} else if(id == R.id.agregar) {
 	    	final Dialog dialog = new Dialog(this);
 	        dialog.setContentView(R.layout.dialog_articulo);
+	        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+	        lp.copyFrom(dialog.getWindow().getAttributes());
+	        lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
+	        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
 	        dialog.setTitle("AGREGAR ARCHIVO");
+	        //Acción de aceptar y cancelar
+	        dialog.findViewById(R.id.aceptarbutton).setOnClickListener(new Button.OnClickListener(){
+	            @Override
+	            public void onClick(View v) {
+	            	//Poner set view visible
+	            	ImageView mik = (ImageView) findViewById(R.id.mikhail);
+	            	ImageView mikar = (ImageView) findViewById(R.id.mikhail_arriba);
+	            	mik.setVisibility(View.VISIBLE);
+	            	mikar.setVisibility(View.VISIBLE);
+	            	Toast.makeText(getApplicationContext(), "Se ha agregado su artículo", Toast.LENGTH_SHORT).show();
+	            	dialog.dismiss();
+	            	
+	            }
+	        });
+	        
+	        dialog.findViewById(R.id.cancelarbutton).setOnClickListener(new Button.OnClickListener(){
+	            @Override
+	            public void onClick(View v) {
+	            	dialog.dismiss();
+	            }
+	        });
 	        dialog.show();
 		}
 		return super.onOptionsItemSelected(item);

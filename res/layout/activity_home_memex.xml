@@ -6,12 +6,19 @@
     tools:context="memex.interfaz.HomeMemexActivity"
     tools:ignore="MergeRootFrame" >
 
+	<ScrollView
+	    android:id="@+id/scrollView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="545dp"
+	    android:layout_alignLeft="@+id/teinteresaria"
+	    android:layout_below="@+id/teinteresaria" >
+
     <GridLayout
         android:id="@+id/newsgrid"
         android:layout_width="700dp"
-        android:layout_height="545dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
         android:columnCount="2"
         tools:context="memex.interfaz.HomeMemexActivity"
         tools:ignore="MergeRootFrame" >
@@ -296,8 +303,147 @@
 	        android:layout_height="wrap_content"
 	        android:src="@drawable/book_secret_garden320x480" />
 	    </LinearLayout>
-    </GridLayout>
+			<LinearLayout
+        android:id="@+id/linearLayoutGrid5"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:layout_marginLeft="0dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/background_rectangle_borderlines"
+        android:orientation="vertical" >
+        
+	    <LinearLayout
+	        android:id="@+id/linearLayoutGridStuff5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:layout_gravity="left|center"
+	        android:background="@drawable/background_rectangle_borderlines_filled"
+ >
 
+	         <ImageView
+	            android:id="@+id/imageView5"
+	            android:layout_gravity="left|center"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginLeft="3dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:src="@drawable/imagen32x26" />
+	        
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="left|center"
+	            android:text="La Venus de Milo"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	        <ImageButton
+	            android:id="@+id/investigaciones2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:layout_gravity="right|center"
+	            android:layout_marginRight="1dp"
+	            android:layout_marginLeft="20dp"
+	            android:background="@android:color/transparent"
+	            android:src="@drawable/icono_investigacion32px" />
+
+	        <TextView
+	            android:id="@+id/numero_investigaciones2"
+	            android:layout_width="wrap_content"
+	            android:layout_gravity="right|center"
+	            android:layout_marginRight="5dp"
+	            android:layout_height="wrap_content"
+	            android:text="0"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	    </LinearLayout>
+		<ImageView
+		    android:id="@+id/imagen_venus"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+		    android:src="@drawable/lavenusdemilo" />
+	</LinearLayout>    
+
+	<LinearLayout
+	    android:id="@+id/linearLayoutGrid6"
+	    android:layout_width="465dp"
+	    android:layout_height="320dp"
+	    android:layout_marginLeft="-245dp"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginTop="5dp"
+	    android:background="@drawable/background_rectangle_borderlines"
+	    android:orientation="vertical"
+	    android:visibility="gone" >
+        
+	    <LinearLayout
+	        android:id="@+id/linearLayoutGridStuff6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="30dp"
+	        android:layout_gravity="center|left"
+	        android:background="@drawable/background_rectangle_borderlines_filled"
+ >
+
+	         <ImageView
+	            android:id="@+id/imageView4"
+	            android:layout_gravity="left|center"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginLeft="3dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:src="@drawable/video30x32" />
+	        
+	        <TextView
+	            android:id="@+id/textView4"
+	            android:layout_gravity="left|center"
+	            android:ellipsize = "marquee"
+	            android:lines="1"
+        		android:maxLines="1"
+	            android:layout_width="360dp"
+	            android:layout_height="wrap_content"
+	            android:text="Celebridades reaccionan a tweets"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageButton
+                android:id="@+id/investigaciones4"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="23dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icono_investigacion32px" />
+
+            <TextView
+	            android:id="@+id/numero_investigaciones4"
+	            android:layout_width="wrap_content"
+                android:layout_marginRight="3dp"
+	            android:layout_height="wrap_content"
+                android:layout_gravity="center"
+	            android:text="100"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+	    <ImageView
+	        android:id="@+id/video_home"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+	        android:src="@drawable/eldictador759x463" />
+
+	</LinearLayout>
+	
+    </GridLayout>
+</ScrollView>
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="493dp"
@@ -739,16 +885,6 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/teinteresaria"
-        android:text="Te podría interesar"
-        android:layout_width="685dp"
-        android:layout_gravity="center"
-        android:background="#EBEBEB"
-        android:layout_height="38dp"
-        android:layout_alignLeft="@+id/newsgrid"
-        android:layout_alignTop="@+id/linearLayout1" />
-
     <SlidingDrawer
         android:id="@+id/slidingDrawer1"
         android:layout_width="fill_parent"
@@ -801,6 +937,20 @@
 		            android:layout_marginLeft="3dp"
 		            android:background="@android:color/transparent"
 		            android:src="@drawable/tree_article_image500x189" />
+	            
+	            <ImageButton
+	                android:id="@+id/content_inside9"
+	                android:layout_width="wrap_content"
+	                android:layout_height="fill_parent"
+	                android:layout_column="0"
+	                android:layout_gravity="right|center"
+	                android:layout_marginBottom="3dp"
+	                android:layout_marginLeft="-335dp"
+	                android:layout_marginRight="3dp"
+	                android:layout_marginTop="3dp"
+	                android:background="@android:color/transparent"
+	                android:src="@drawable/arriba_arbol_blanco" />
+
 	            <ImageButton
 		            android:id="@+id/content_inside4"
 		            android:layout_width="wrap_content"
@@ -839,5 +989,15 @@
 	        </LinearLayout>
 	     </HorizontalScrollView>
     </SlidingDrawer>
-   
+
+    <Button
+        android:id="@+id/teinteresaria"
+        android:layout_width="685dp"
+        android:layout_height="38dp"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_marginRight="28dp"
+        android:layout_toLeftOf="@+id/linearLayout1"
+        android:background="#EBEBEB"
+        android:text="Te podría interesar" />
+
 </RelativeLayout>

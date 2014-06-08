@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" 
+    android:gravity="center">
+
+<LinearLayout
     android:orientation="vertical"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center">
     <EditText
         android:id="@+id/titulo"
         android:inputType="text"
@@ -119,6 +127,28 @@
         </RadioGroup>
 
     </RelativeLayout>
+	<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center">
 
+    <Button
+        android:id="@+id/aceptarbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar" />
+
+    <Button
+        android:id="@+id/cancelarbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Cancelar" />
+
+    </LinearLayout>
 
 </LinearLayout>
+
+</RelativeLayout>
