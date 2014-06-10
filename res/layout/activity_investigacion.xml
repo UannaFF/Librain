@@ -230,5 +230,104 @@
 
     </RelativeLayout>
 
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <LinearLayout
+            android:id="@+id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/dentroHandle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/clipboard71x71" />
+
+            <Button
+                android:id="@+id/lineaHandle"
+                android:layout_width="fill_parent"
+                android:layout_height="7dp"
+                android:layout_marginBottom="3dp"
+                android:background="#CC87CEFA" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CCEBEBEB" >
+
+            <LinearLayout
+                android:id="@+id/content_inside"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#CCEBEBEB" >
+
+                <ImageButton
+                    android:id="@+id/content_inside3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_column="0"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/tree_article_image500x189" />
+
+                <ImageButton
+                    android:id="@+id/content_inside9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_column="0"
+                    android:layout_gravity="right|center"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="-335dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/arriba_arbol_blanco" />
+
+                <ImageButton
+                    android:id="@+id/content_inside4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_column="0"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ballet_pic_222x300" />
+
+                <ImageButton
+                    android:id="@+id/content_inside5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="-152dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ballet_pic_arriba_porta" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </SlidingDrawer>
+
 
 </RelativeLayout>
