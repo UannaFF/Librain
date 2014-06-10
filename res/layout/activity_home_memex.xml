@@ -955,36 +955,28 @@
 		            android:id="@+id/content_inside4"
 		            android:layout_width="wrap_content"
 		            android:layout_height="fill_parent"
-		            android:layout_gravity="right|center"
+		            android:layout_gravity="center_vertical"
+		            android:gravity="center_vertical"
 		            android:layout_column="0"
 		            android:layout_marginRight="3dp"
 		            android:layout_marginTop="3dp"
 		            android:layout_marginBottom="3dp"
 		            android:layout_marginLeft="3dp"
 		            android:background="@android:color/transparent"
-		            android:src="@drawable/articulo_pequeno_interfaces" />
+		            android:src="@drawable/ballet_pic_222x300" />
+
 	            <ImageButton
-		            android:id="@+id/content_inside5"
-		            android:layout_width="wrap_content"
-		            android:layout_height="fill_parent"
-		            android:layout_gravity="right|center"
-		            android:layout_marginRight="3dp"
-		            android:layout_marginTop="3dp"
-		            android:layout_marginBottom="3dp"
-		            android:layout_marginLeft="3dp"
-		            android:background="@android:color/transparent"
-		            android:src="@drawable/book_secret_garden320x480" />
-	            <ImageButton
-		            android:id="@+id/content_inside3"
-		            android:layout_width="wrap_content"
-		            android:layout_height="fill_parent"
-		            android:layout_gravity="right|center"
-		            android:layout_marginRight="3dp"
-		            android:layout_marginTop="3dp"
-		            android:layout_marginBottom="3dp"
-		            android:layout_marginLeft="3dp"
-		            android:background="@android:color/transparent"
-		            android:src="@drawable/tree_article_image900x340" />
+	                android:id="@+id/content_inside5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="fill_parent"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginBottom="3dp"
+	                android:layout_marginLeft="-152dp"
+	                android:layout_marginRight="3dp"
+	                android:layout_marginTop="3dp"
+	                android:background="@android:color/transparent"
+	                android:gravity="center_vertical"
+	                android:src="@drawable/ballet_pic_arriba_porta" />
 
 	        </LinearLayout>
 	     </HorizontalScrollView>

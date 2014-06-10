@@ -116,20 +116,20 @@
 		    android:orientation="horizontal">
 
 	    <ImageView
-	        android:id="@+id/libro_secretgardeninvest"
+	        android:id="@+id/invest1"
 	        android:layout_width="wrap_content"
 	        android:layout_height="fill_parent"
 	        android:src="@drawable/invest1" />
 	    <ImageView
-	        android:id="@+id/treeinvest"
+	        android:id="@+id/invest2"
 	        android:layout_width="wrap_content"
 	        android:layout_height="fill_parent"
-	        android:src="@drawable/tree_article_image500x189" />
+	        android:src="@drawable/invest2" />
 	    <ImageView
-	        android:id="@+id/zeldainvest"
+	        android:id="@+id/invest3"
 	        android:layout_width="wrap_content"
 	        android:layout_height="fill_parent"
-	        android:src="@drawable/book_secret_garden320x480" />
+	        android:src="@drawable/invest3" />
 	    </LinearLayout>
 
     </HorizontalScrollView>
@@ -235,7 +235,8 @@
 	                android:layout_height="match_parent"
 	                android:background="@drawable/background_rectangle_borderlines"
 	                android:padding="4dp"
-	                android:text=" Seleccionaste como favorita a la investigación \n de Francisco Gamundi &apos;El totalitarismo&apos; " />
+	                android:text=" Seleccionaste como favorita a la investigación \n de Francisco Gamundi &apos;El totalitarismo&apos; "
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
 
 	            <TextView
 	                android:id="@+id/fecha1"
@@ -247,14 +248,16 @@
 	                android:text="01/03/2014" />
 
             </LinearLayout>
+
              <LinearLayout
-		        android:id="@+id/historialL2"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_column="1"
-	            android:layout_row="0"
-	            android:layout_margin="5dp"
-		        android:orientation="vertical" >
+                 android:id="@+id/historialL2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_column="1"
+                 android:layout_margin="5dp"
+                 android:layout_marginLeft="-3dp"
+                 android:layout_row="0"
+                 android:orientation="vertical" >
 
 	            <TextView
 	                android:id="@+id/historial2"
@@ -262,7 +265,9 @@
 	                android:layout_height="match_parent"
 	                android:background="@drawable/background_rectangle_blue"
 	                android:padding="4dp"
-	                android:text="Seleccionaste como favorita a la investigación \n de Juan Díaz 'El Medioevo'" /> />
+	                android:text="Seleccionaste como favorita a la investigación \n de Juan Díaz &apos;El Medioevo&apos;"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+ />
 
 	            <TextView
 	                android:id="@+id/fecha2"
@@ -274,14 +279,16 @@
 	                android:text="10/03/2014" />
 
             </LinearLayout>
+
            	<LinearLayout
-		        android:id="@+id/historialL3"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_column="2"
-	            android:layout_row="0"
-	            android:layout_margin="5dp"
-		        android:orientation="vertical" >
+           	    android:id="@+id/historialL3"
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content"
+           	    android:layout_column="2"
+           	    android:layout_margin="5dp"
+           	    android:layout_marginLeft="-3dp"
+           	    android:layout_row="0"
+           	    android:orientation="vertical" >
 
 	            <TextView
 	                android:id="@+id/historial3"
@@ -289,7 +296,9 @@
 	                android:layout_height="match_parent"
 	                android:background="@drawable/background_rectangle_borderlines"
 	                android:padding="4dp"
-	                android:text="Leíste el artículo de Dan Staff\n'Comportamientos primitivos'" /> />
+	                android:text="Leíste el artículo de Dan Staff\n&apos;Comportamientos primitivos&apos;"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+ />
 
 	            <TextView
 	                android:id="@+id/fecha3"
@@ -301,14 +310,16 @@
 	                android:text="14/03/2014" />
 
             </LinearLayout>
+
             <LinearLayout
-		        android:id="@+id/historialL4"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_column="0"
-	            android:layout_row="1"
-	            android:layout_margin="5dp"
-		        android:orientation="vertical" >
+                android:id="@+id/historialL4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                android:layout_marginTop="-3dp"
+                android:layout_row="1"
+                android:orientation="vertical" >
 
 	            <TextView
 	                android:id="@+id/historial4"
@@ -316,7 +327,9 @@
 	                android:layout_height="match_parent"
 	                android:background="@drawable/background_rectangle_blue"
 	                android:padding="4dp"
-	                android:text="Haz creado un enlace entre el artículo de \n Joan Heart 'Las costumbres cristianas y \n el libro de Christian Stab 'Beaty above all''" /> />
+	                android:text="Haz creado un enlace entre el artículo de \n Joan Heart &apos;Las costumbres cristianas y \n el libro de Christian Stab &apos;Beaty above all&apos;&apos;"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+ />
 
 	            <TextView
 	                android:id="@+id/fecha4"
@@ -328,16 +341,17 @@
 	                android:text="14/03/2014" />
 
             </LinearLayout>
-            <LinearLayout
-		        android:id="@+id/historialL5"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_column="1"
-	            android:layout_row="1"
-	            android:layout_marginRight="5dp"
 
-	            android:layout_marginTop="5dp"
-		        android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/historialL5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="-52dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="-3dp"
+                android:layout_row="1"
+                android:orientation="vertical" >
 
                 <TextView
                     android:id="@+id/historial5"
@@ -345,9 +359,8 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/background_rectangle_borderlines"
                     android:padding="4dp"
-                    android:text="Haz creado una nota en el artículo de &apos;Ellen Page,\n &apos;Dying of a broken heart&apos;" />
-
-
+                    android:text="Haz creado una nota en el artículo de &apos;Ellen Page,\n &apos;Dying of a broken heart&apos;"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
 	            <TextView
 	                android:id="@+id/fecha5"
@@ -396,7 +409,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#CCEBEBEB" >
-	        <LinearLayout
+	<LinearLayout
 	            android:id="@+id/content_inside"
 	            android:layout_width="wrap_content"
 	            android:layout_height="match_parent"
@@ -415,29 +428,46 @@
 		            android:layout_marginLeft="3dp"
 		            android:background="@android:color/transparent"
 		            android:src="@drawable/tree_article_image500x189" />
+	            
+	            <ImageButton
+	                android:id="@+id/content_inside9"
+	                android:layout_width="wrap_content"
+	                android:layout_height="fill_parent"
+	                android:layout_column="0"
+	                android:layout_gravity="right|center"
+	                android:layout_marginBottom="3dp"
+	                android:layout_marginLeft="-335dp"
+	                android:layout_marginRight="3dp"
+	                android:layout_marginTop="3dp"
+	                android:background="@android:color/transparent"
+	                android:src="@drawable/arriba_arbol_blanco" />
+
 	            <ImageButton
 		            android:id="@+id/content_inside4"
 		            android:layout_width="wrap_content"
 		            android:layout_height="fill_parent"
-		            android:layout_gravity="right|center"
+		            android:layout_gravity="center_vertical"
+		            android:gravity="center_vertical"
 		            android:layout_column="0"
 		            android:layout_marginRight="3dp"
 		            android:layout_marginTop="3dp"
 		            android:layout_marginBottom="3dp"
 		            android:layout_marginLeft="3dp"
 		            android:background="@android:color/transparent"
-		            android:src="@drawable/articulo_pequeno_interfaces" />
+		            android:src="@drawable/ballet_pic_222x300" />
+
 	            <ImageButton
-		            android:id="@+id/content_inside3"
-		            android:layout_width="wrap_content"
-		            android:layout_height="fill_parent"
-		            android:layout_gravity="right|center"
-		            android:layout_marginRight="3dp"
-		            android:layout_marginTop="3dp"
-		            android:layout_marginBottom="3dp"
-		            android:layout_marginLeft="3dp"
-		            android:background="@android:color/transparent"
-		            android:src="@drawable/tree_article_image900x340" />
+	                android:id="@+id/content_inside5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="fill_parent"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginBottom="3dp"
+	                android:layout_marginLeft="-152dp"
+	                android:layout_marginRight="3dp"
+	                android:layout_marginTop="3dp"
+	                android:background="@android:color/transparent"
+	                android:gravity="center_vertical"
+	                android:src="@drawable/ballet_pic_arriba_porta" />
 
 	        </LinearLayout>
 	     </HorizontalScrollView>

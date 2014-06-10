@@ -29,6 +29,7 @@ public class PerfilActivity extends ActionBarActivity {
 	private ImageButton favoritos, historial, misinvestigaciones, misarticulos;
 	private String[] amigos = { "Ryan Gossling", "Rupert Green", "Anna Gomez", "Francisco Gamundi",
 			"Erik Dell", "Bill Clinton", "Rafael Correa", "Ellen Page", "Emma Watson", "Marion Cotillard" };
+	private Button info;
 	private ListView lv1;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -105,6 +106,22 @@ public class PerfilActivity extends ActionBarActivity {
                 //tv1.setText("Población de "+ lv1.getItemAtPosition(posicion) + " es "+ habitantes[posicion]);
             }
         });
+        
+        info = (Button)findViewById(R.id.info);
+		info.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	final Dialog dialog = new Dialog(PerfilActivity.this);
+    	        dialog.setContentView(R.layout.dialog_preferencias);
+    	        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+    	        lp.copyFrom(dialog.getWindow().getAttributes());
+    	        lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
+    	        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+    	        dialog.setTitle("Información");
+    	        dialog.show();
+            }
+        });
+        
 	}
 
 	@Override
