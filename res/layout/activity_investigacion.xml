@@ -60,7 +60,7 @@
             android:background="@drawable/back__nodos_investigacion"
             android:drawableLeft="@drawable/video30x32"
             android:padding="10dp"
-            android:layout_marginTop="260dp"
+            android:layout_marginTop="250dp"
             android:layout_marginLeft="1000dp"
             android:text="Gran Samán Naguanagua"/>
 
@@ -90,7 +90,7 @@
             android:background="@drawable/back__nodos_investigacion"
             android:drawableLeft="@drawable/libro32x23"
             android:layout_marginLeft="750dp"
-            android:layout_marginTop="500dp"
+            android:layout_marginTop="485dp"
             android:padding="10dp"
             android:text="Árbol de patria" />
 
