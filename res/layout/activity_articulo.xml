@@ -68,18 +68,52 @@
 		        android:orientation="vertical" >
 
 		        <LinearLayout
+		            android:id="@+id/primer_enlace"
 			        android:layout_width="fill_parent"
 			        android:layout_height="wrap_content"
 			        android:orientation="horizontal" >
+			        <ImageView
+				        android:id="@+id/circuloenl1"
+				        android:layout_width="10dp"
+				        android:layout_height="10dp"
+				        android:layout_marginLeft="5dp"
+				        android:src="@drawable/circulo_verde" />
 			        
 	        		<TextView
-			            android:id="@+id/nohay"
-			            android:layout_width="wrap_content"
-			            android:layout_height="wrap_content"
-			            android:layout_marginLeft="60dp"
-			            android:gravity="center_horizontal"
-			            android:layout_gravity="center_horizontal"
-			            android:text="No se encuentra revisando ninguna investigación." />	
+	        		    android:id="@+id/enl1"
+	        		    android:layout_width="wrap_content"
+	        		    android:layout_height="wrap_content"
+	        		    android:layout_gravity="center_horizontal"
+	        		    android:layout_marginLeft="10dp"
+	        		    android:gravity="center_horizontal"
+	        		    android:text="Tiene que ver con el crecimiento de la ciudad"
+	        		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+				</LinearLayout> 
+
+				<LinearLayout
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="10dp"
+				    android:orientation="horizontal" >
+
+			        <ImageView
+				        android:id="@+id/circuloenl2"
+				        android:layout_width="10dp"
+				        android:layout_height="10dp"
+				        android:layout_marginLeft="5dp"
+				        android:src="@drawable/circulo_amarillo" />
+			        
+	        		<TextView
+	        		    android:id="@+id/enl2"
+	        		    android:layout_width="wrap_content"
+	        		    android:layout_height="wrap_content"
+	        		    android:layout_gravity="center_horizontal"
+	        		    android:layout_marginLeft="10dp"
+	        		    android:gravity="center_horizontal"
+	        		    android:text="Interesante historia de fondo del árbol."
+	        		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
 				</LinearLayout> 
 		    </LinearLayout>
 		</ScrollView>
@@ -114,24 +148,27 @@
 		    android:id="@+id/scrollInvest"
 		    android:layout_width="fill_parent"
 		    android:layout_height="450dp"
-		    android:visibility="visible" >
+		    android:visibility="gone" >
 
 		    <LinearLayout
 		        android:layout_width="fill_parent"
 		        android:layout_height="wrap_content"
 		        android:orientation="vertical" >
+
 		       	<TextView
-			            android:id="@+id/nomInvest"
-			            android:layout_width="fill_parent"
-			            android:layout_height="wrap_content"
-			            android:layout_marginLeft="1dp"
-			            android:background="@drawable/background_rectangle_borderlines"
-			            android:text=" - La influencia de los árboles en \n seres humanos.\n  -Autor: Tomás Marín" />	
+		       	    android:id="@+id/nomInvest"
+		       	    android:layout_width="fill_parent"
+		       	    android:layout_height="wrap_content"
+		       	    android:layout_marginLeft="1dp"
+		       	    android:background="@drawable/background_rectangle_borderlines"
+		       	    android:text=" - La influencia de los árboles en seres humanos.\n         -Autor: Tomás Marín"
+		       	    android:textAppearance="?android:attr/textAppearanceMedium" />
 
 		        <LinearLayout
 			        android:layout_width="fill_parent"
 			        android:layout_height="wrap_content"
-			        android:orientation="horizontal" >
+			        android:orientation="horizontal"
+			        android:padding="5dp" >
 	        		
 		            <ImageView
 				        android:id="@+id/circulo1"
@@ -151,7 +188,8 @@
 		        <LinearLayout
 			        android:layout_width="fill_parent"
 			        android:layout_height="wrap_content"
-			        android:orientation="horizontal" >
+			        android:orientation="horizontal"
+			        android:padding="5dp" >
 	        		
 		            <ImageView
 				        android:id="@+id/circulo2"
@@ -169,17 +207,19 @@
 				</LinearLayout> 
 				
 		        <TextView
-			            android:id="@+id/nomInvest2"
-			            android:layout_width="fill_parent"
-			            android:layout_height="wrap_content"
-			            android:layout_marginLeft="1dp"
-			            android:background="@drawable/background_rectangle_borderlines"
-			            android:text=" - Los árboles y las ciudades.\n  -Autor: Julieta Córdoba" />	
+		            android:id="@+id/nomInvest2"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="1dp"
+		            android:background="@drawable/background_rectangle_borderlines"
+		            android:text=" - Los árboles y las ciudades.\n         -Autor: Julieta Córdoba"
+		            android:textAppearance="?android:attr/textAppearanceMedium" />
 
 		        <LinearLayout
 			        android:layout_width="fill_parent"
 			        android:layout_height="wrap_content"
-			        android:orientation="horizontal" >
+			        android:orientation="horizontal"
+			        android:padding="5dp" >
 	        		
 		            <ImageView
 				        android:id="@+id/circulo3"
@@ -218,7 +258,7 @@
 		    android:id="@+id/scrollRelacion"
 		    android:layout_width="fill_parent"
 		    android:layout_height="450dp"
-		    android:visibility="gone" >
+		    android:visibility="visible" >
 
 		    <LinearLayout
 		        android:layout_width="fill_parent"
@@ -239,12 +279,14 @@
 				        android:layout_marginLeft="5dp"
 				        android:layout_gravity="center_vertical"
 				        android:src="@drawable/libro32x23"/>
+
 		            <TextView
-			            android:id="@+id/textRela1"
-			            android:layout_width="wrap_content"
-			            android:layout_height="wrap_content"
-			            android:layout_marginLeft="5dp"
-			            android:text=" Como identificar a un árbol.\n  Autor: José Mendez" />	
+		                android:id="@+id/textRela1"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="5dp"
+		                android:text=" Como identificar a un árbol.\n  Autor: José Mendez"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
 			        
 				</LinearLayout> 	
 				<LinearLayout
@@ -261,30 +303,20 @@
 				        android:layout_marginLeft="5dp"
 				        android:layout_gravity="center_vertical"
 				        android:src="@drawable/video30x32"/>
+
 		            <TextView
-			            android:id="@+id/textRela2"
-			            android:layout_width="wrap_content"
-			            android:layout_height="wrap_content"
-			            android:layout_marginLeft="5dp"
-			            android:text=" Crecimiento del árbol de Pittsburg.\n  Autor: Josh Keimo" />	
+		                android:id="@+id/textRela2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="5dp"
+		                android:text=" Crecimiento del árbol de Pittsburg.\n  Autor: Josh Keimo"
+		                android:textAppearance="?android:attr/textAppearanceMedium" />
 			        
 				</LinearLayout> 
 		        
 		    </LinearLayout>
 		</ScrollView>
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="700dp"
-        android:layout_height="50dp"
-        android:padding="10dp"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/lineaHandleIvestigacion"
-        android:layout_toRightOf="@+id/lineaHandle"
-        android:background="@drawable/background_rectangle_blue"
-        android:text="Título: Árbol de las afueras de Pittsburg\n	-Autor: Lagertha Lockbrock"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ImageButton
         android:id="@+id/imageButton1"
@@ -312,6 +344,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/titulo"
         android:layout_below="@+id/titulo"
+        android:layout_marginLeft="50dp"
         android:padding="10dp"
         android:text="Investigación: Árboles Citadinos"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -367,7 +400,7 @@
 	            android:background="#CCEBEBEB" >
                 
 	            <ImageButton
-		            android:id="@+id/content_inside3"
+		            android:id="@+id/content_tree"
 		            android:layout_width="wrap_content"
 		            android:layout_height="fill_parent"
 		            android:layout_gravity="right|center"
@@ -380,7 +413,7 @@
 		            android:src="@drawable/tree_article_image500x189" />
 	            
 	            <ImageButton
-	                android:id="@+id/content_inside9"
+	                android:id="@+id/content_tree_arriba"
 	                android:layout_width="wrap_content"
 	                android:layout_height="fill_parent"
 	                android:layout_column="0"
@@ -442,6 +475,37 @@
             android:layout_marginBottom="28dp"
             android:background="@android:color/transparent"
             android:src="@drawable/agregar_enlace" />
+
+        <LinearLayout
+            android:id="@+id/titulo"
+            android:layout_width="843dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/background_rectangle_blue"
+            android:layout_toRightOf="@+id/lineaHandle"
+            android:orientation="horizontal" >
+
+		    <ImageView
+		        android:id="@+id/tipo_im"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_marginLeft="15dp"
+		        android:layout_toRightOf="@+id/imageButton1"
+		        android:src="@drawable/imagen32x26" />
+
+            <TextView
+                android:id="@+id/titulocontent"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@+id/lineaHandle"
+                android:layout_weight="34"
+                android:padding="10dp"
+                android:text="Título: Árbol de las afueras de Pittsburg\n	-Autor: Lagertha Lockbrock"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
     
 </RelativeLayout>
 

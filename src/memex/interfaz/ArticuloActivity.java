@@ -26,7 +26,8 @@ import android.os.Build;
 public class ArticuloActivity extends ActionBarActivity {
 	Button irInvestigacion, lineaHandle;
 	ScrollView s1, s2, s3;
-	LinearLayout relacion, lin1, lin2, lin3;
+	ImageButton imtree, imar, agregar;
+	LinearLayout relacion, lin1, lin2, lin3, enla;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -68,6 +69,7 @@ public class ArticuloActivity extends ActionBarActivity {
 		s2 = (ScrollView)findViewById(R.id.scrollInvest);
 		lin3 = (LinearLayout)findViewById(R.id.relacionadoRela);
 		s3 = (ScrollView)findViewById(R.id.scrollRelacion);
+		enla=(LinearLayout)findViewById(R.id.primer_enlace);
 		lin1.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,7 +109,30 @@ public class ArticuloActivity extends ActionBarActivity {
             }
         });
 		
+		enla.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	final Dialog dialog = new Dialog(ArticuloActivity.this);
+    	        dialog.setContentView(R.layout.dialog_link_enlace);
+    	        dialog.setTitle("ENLACE");
+    	        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+    	        lp.copyFrom(dialog.getWindow().getAttributes());
+    	        lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
+    	        lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
+    	        dialog.show();
+            }
+        });
+		imtree= (ImageButton)findViewById(R.id.content_tree);
+		imar= (ImageButton)findViewById(R.id.content_tree_arriba);
+		agregar=(ImageButton) findViewById(R.id.imageButton1);
 		
+		lineaHandle.setOnClickListener(new ImageButton.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	imtree.setVisibility(View.VISIBLE);
+            	imar.setVisibility(View.VISIBLE);
+            }
+        });
 	}
 
 	@Override
